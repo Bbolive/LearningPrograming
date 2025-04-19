@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        div{
+            border: 1px solid blueviolet;
+        }
+        span{
+            border: 1px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>web page 3 : Table</h1>
+    <hr>
+    <table border="1" cellpadding="10" cellspacing="4">
+        <!-- cellspacing = ขยายด้านนอกตาราง -->
+        <!-- cellpadding = ขยายด้านในตาราง -->
+        <!-- border เป็นการระบุความหนาของเส้นตาราง -->
+        <!-- width เป็นการกำหนดความกว้างของคอลัมน์ -->
+        <thead> <!-- หัวตาราง -->
+            <th>รหัสสินค้า</th>
+            <th>ภาพสินค้า</th>
+            <th>ชื่อสินค้า</th>
+            <th>ราคา</th>
+            <th>สั่งซื้อ</th>
+        </thead>
+        <body >
+            <tr bgcolor = yellow>
+                <td>B001</td>
+                <!-- align จัดให้อยู่ตรงกลาง -->
+                <td>
+                    <img src="https://cdn.pixabay.com/photo/2014/01/22/19/38/boot-250012_1280.jpg" alt="" width="150px" height="150px" >
+                </td>
+                <td>รองเท้าบูต</td>
+                <td bgcolor = red>899.00</td>
+                <td rowspan="2">
+                    <a href="#">สั่งซื้อ</a>
+                     <!-- rowspan เป็นการรวมแถว 2 ตัวอยู่ในแถวเดียวกัน -->
+                </td>
+            </tr>
+            <tr bgcolor = orange >
+                <td >B002</td>
+                <td >
+                    <img src="https://cdn.pixabay.com/photo/2014/06/18/18/42/running-shoe-371625_1280.jpg" alt="" width="150px" height="150px">
+                </td>
+                <td>รองเท้ากีฬา</td>
+                <td bgcolor = red >999.00</td>
+                
+            </tr>
+            <!-- <tr></tr> = 1 แถว -->
+            <!-- <td></td> = 1 คอลัมน์ -->
+        </body>
+        <tfoot>
+            <tr align="right">
+                <td colspan="5"><strong>ราคารวม : 1898.00 </strong></td>
+                <!-- <strong></strong> ใส่ตัวหนา -->
+                <!-- colspan เป็นการรวมคอลัมน์ 2 ตัวอยู่ในคอลัมน์เดียวกัน -->
+            </tr>
+        </tfoot>
+    </table>
+    <span style="color: red;" >
+        <h1>store</h1>
+        <p>cloth</p>
+    </span>
+    <span style="color: palevioletred;">
+        <h1>fruit</h1>
+        <p>banana</p>
+    </span>
+    <!-- จัดกลุ่มข้อมูลโดยไม่ขึ้นบรรทัดใหม่ -->
+    <div style="color: red;">
+        <h1>store</h1>
+        <p>skirt</p>
+    </div>
+    <div style="color: pink;">
+        <h1>fruit</h1>
+        <p>banana</p>
+    </div>
+    <!-- จัดกลุ่มข้อมูลโดยขึ้นบรรทัดใหม่ -->
+    
+</body>
+</html>

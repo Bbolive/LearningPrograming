@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singin</title>
+    <style>
+        form{
+            border: 2px solid blue;
+        }
+        input{
+            border: 2px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <h2 align="center">Welcome to Singin</h2>
+    <form align="center">
+        <div>
+            <label for="firstname">Firstname</label>
+            <input type="text" name="firstname" placeholder="Enter your Firstname">
+            <!-- placeholder เป็นการใส่ข้อความในช่องสำหรับกรอกข้อมูล -->
+        </div>
+        <div>
+            <label for="lastname">Lastname</label>
+            <input type="text" name="lastname">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+            <!-- required เป้นการบังคับกรอกข้อมูล -->
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <label for="location">Location</label>
+        <textarea name="text" cols="20" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" min="0" max="100" value="1">
+            <!-- value = ค่าเริ่มต้น -->
+            <!-- ถ้าเพิ่ม readonly ต่อท้าย value จะสามารถอ่านได้อย่างเดียวไม่สามารถกรอกข้อมูลอะไรลงไปได้ -->
+        </div>
+        <div>
+            <label for="birthday">Birthday</label>
+            <input type="date" name="birthday">
+        </div>
+        <div>
+            <label for="phone number">Phone Number</label>
+            <input type="tel" name="phone number">
+        </div>
+        <div>
+            <label for="favorite color"> Favorite Colors</label>
+            <input type="color" name="favorite color">
+        </div>
+        <div>
+            <label for="number"> Number</label>
+            <input type="range" name="number">
+            <!-- ช่วงตัวเลขเป็นสไลด์ -->
+        </div>
+        <div>
+            <label for="education">Education</label>
+            <select name="education" id="">
+                <option value="secondary">Secondary Education</option>
+                <option value="bechelor's" selected>Bachelor's Degree</option>
+                <!-- เพิ่ม selected เพื่อตั้งให้ Bachelor's Degree เป็นค่าเริ่มต้น -->
+                <option value="master's">Master's Degree</option>
+                <option value="doctoral">Doctoral Degrees</option>
+            </select>
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Other
+        </div>
+        <div>
+            <label for="favorite">Favorite</label>
+            <input type="checkbox" name="favorite">Web Design
+            <input type="checkbox" name="favorite">Playing Games
+            <input type="checkbox" name="favorite">Drawing        
+        </div>
+        <div>
+            <label for="website">Website</label>
+            <input type="url" name="website">       
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+            <input type="reset" name="" id="" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
